@@ -1,9 +1,12 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
+import FadeIn from "./components/FadeIn.jsx"
+import Footer from "./components/Footer.jsx";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Footer from "./components/Footer.jsx";
+
+
 
 
 function App() {

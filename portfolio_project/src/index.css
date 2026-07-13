@@ -28,6 +28,16 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 #navbar {
   position: fixed;
@@ -100,6 +110,7 @@ section {
   background-color: var(--5);
   padding: 30px;
   border-radius: 10px;
+  animation: heroFadeIn 2s ease;
 }
 
 
@@ -217,6 +228,19 @@ section {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(0, 0, 0 0.14)
   
+}
+
+.projects-grid .fade-in:nth-child(1) {
+  transition-delay: .1s;
+}
+.projects-grid .fade-in:nth-child(2) {
+  transition-delay: .2s;
+}
+.projects-grid .fade-in:nth-child(3) {
+  transition-delay: .3s;
+}
+.projects-grid .fade-in:nth-child(4) {
+  transition-delay: .4s;
 }
 
 
@@ -409,4 +433,17 @@ cursor: pointer;
     transform: translateY(24px) scale(0.96);
   }
   
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 }

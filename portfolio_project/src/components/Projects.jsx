@@ -1,24 +1,26 @@
+import FadeIn from "./FadeIn";
+
 import { useState } from "react";
 
 const projects = [
     {
         id: 1,
         title: "Diamond Encryption and Decryption OOP CLI App in C++",
-        decription: "TEST",
+        description: "TEST",
         video: ""
     },
 
     {
         id: 2,
         title: "Full-stack Surf Session Tracker in React and Node.js",
-        decription: "TEST",
+        description: "TEST",
         video: ""
     },
 
     {
         id: 3,
         title: "DJ Soundpad in Vaninlla JavaScript, CSS and HTML",
-        decription: "TEST",
+        description: "TEST",
         video: ""
     },
 
@@ -51,14 +53,17 @@ function Projects() {
 
     return (
         <section id="projects">
-
-            <h1 className="sub-header">My Projects</h1>
+            <FadeIn>
+                <h1 className="sub-header">My Projects</h1>
+            </FadeIn>
             <div className="projects-grid">
                 {projects.map((project) => (
-                    <button className="project-card box-shadow-subtle" onClick={() => openModal(project)} key={project.id}>
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                    </button>
+                    <FadeIn key={project.id}>
+                        <button className="project-card box-shadow-subtle" onClick={() => openModal(project)} key={project.id}>
+                            <h3>{project.title}</h3>
+                            <p>{project.description}</p>
+                        </button>                       
+                    </FadeIn>
                 ))}
             </div>
 
