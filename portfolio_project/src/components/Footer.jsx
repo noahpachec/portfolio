@@ -12,7 +12,7 @@ function Footer() {
             </div>
 
             <a className="upper-text">Download my resume</a>
-            <a className="upper-text">My GitHub</a>
+            <a className="upper-text" href="https://github.com/noahpachec" target="_blank">My GitHub</a>
             <p className="upper-text">Website made using React</p>
 
         </section>
