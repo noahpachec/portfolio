@@ -6,7 +6,8 @@ const projects = [
     {
         id: 1,
         title: "Diamond Encryption and Decryption OOP CLI App in C++",
-        description: "TEST",
+        description: "I created an encription and decryption algorithm that",
+        image: "public/diamond-traversal.png",
         video: ""
     },
 
@@ -14,6 +15,7 @@ const projects = [
         id: 2,
         title: "Full-stack Surf Session Tracker in React and Node.js",
         description: "TEST",
+        image: "public/light-photo.png",
         video: ""
     },
 
@@ -21,6 +23,7 @@ const projects = [
         id: 3,
         title: "DJ Soundpad in Vaninlla JavaScript, CSS and HTML",
         description: "TEST",
+        image: "public/dj-box-photo.png",
         video: ""
     },
 
@@ -28,8 +31,21 @@ const projects = [
         id: 4,
         title: "Procedural CSS Lightbulb (Design Challenge)", 
         description: "TEST",
+        image: "public/light-photo.png",
         video: ""
-    }
+
+        
+    },
+
+    {   
+        id: 5,
+        title: "OOP CLI Surf Tracker in C++", 
+        description: "TEST",
+        image: "public/light-photo.png",
+        video: ""
+
+        
+    },
 ]
 
 function Projects() {
@@ -54,14 +70,14 @@ function Projects() {
     return (
         <section id="projects">
             <FadeIn>
-                <h1 className="sub-header">My Projects</h1>
+                <h1 className="sub-header">Some of my projects</h1>
             </FadeIn>
             <div className="projects-grid">
                 {projects.map((project) => (
                     <FadeIn key={project.id}>
-                        <button className="project-card box-shadow-subtle" onClick={() => openModal(project)} key={project.id}>
+                        <button className="project-card box-shadow-subtle" onClick={() => openModal(project)}>
                             <h3>{project.title}</h3>
-                            <p>{project.description}</p>
+                            <img src={project.image}/>
                         </button>                       
                     </FadeIn>
                 ))}
@@ -74,6 +90,7 @@ function Projects() {
                             x
                         </button>
                         <h2>{selectedProject.title}</h2>
+                        
                         <p>{selectedProject.description}</p>
                     </div>
                 </div>

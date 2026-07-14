@@ -10,7 +10,7 @@ function About() {
     return (
         <section id="about">
             <FadeIn>
-                <h1 className="sub-header">About me</h1>
+                <h1 className="sub-header">A little more about me</h1>
             </FadeIn>
             
             <div className="about-container">
@@ -40,6 +40,12 @@ function About() {
 
                     </FadeIn>
                     
+                    <FadeIn>
+                        <div className="resume-callout">
+                            <a href="public/noah_resume.pdf" target="_blank" rel="noopener noreferrer">Please view my resume to see my previous experience.</a>
+                        </div>
+                    </FadeIn>
+                    
                 </div>
                 <div className="about-images">
                     <FadeIn>
@@ -56,6 +62,8 @@ function About() {
                         <img className="about-img-3 box-shadow-subtle" src={hackathonImg} alt="Noah giving a speech at a hackathon"/>
 
                     </FadeIn>
+
+
                 </div>
                 
             </div>
