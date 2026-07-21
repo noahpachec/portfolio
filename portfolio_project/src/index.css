@@ -634,6 +634,9 @@ cursor: pointer;
   }
 
 
+  #about p {
+    text-align: center;
+  }
 
 
   .nav-item:active {
