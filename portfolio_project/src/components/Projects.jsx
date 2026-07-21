@@ -2,6 +2,8 @@ import FadeIn from "./FadeIn";
 
 import { useState } from "react";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const projects = [
     {
         id: 1,
@@ -14,7 +16,7 @@ Decryption reverses this process. The ciphertext is reconstructed inside the gri
 
 The application also supports saving plaintext and ciphertext to files, loading previously stored data, and handling invalid input without terminating unexpectedly. The entire program was designed using object-oriented principles, including separate classes for the cipher logic, grid management, file handling, error handling, and the menu system that directs users through each layer of the application.
 `,
-        image: "public/diamond-traversal.png",
+        image: `${BASE_URL}diamond-traversal.png`,
         video: "",
         code_url: "",
         url_text: "View the code on my GitHub here"
@@ -29,7 +31,7 @@ Users can also search and filter sessions across a selection of supported surf l
 
 The purpose of this project was to strengthen my understanding of backend development, client-server communication, API design, and data management while gaining experience building a more complete and interconnected web application.
 `,
-        image: "public/light-photo.png",
+        image: `${BASE_URL}light-photo.png`,
         video: "",
         code_url: "",
         url_text: "View the code on my GitHub here"
@@ -44,7 +46,7 @@ Built using HTML, CSS, and JavaScript, the application allows users to trigger d
 
 The project has some limitations when multiple sounds are triggered rapidly due to the way the browser audio system is handled. However, it was one of my first projects to combine interactive JavaScript functionality with my frontend design skills, and it helped me better understand event handling, audio playback, and object-oriented programming in the browser.
 `,
-        image: "public/dj-box-photo.png",
+        image: `${BASE_URL}/dj-box-photo.png`,
         video: "",
         code_url: "https://noahpachec.github.io/djbox/",
         url_text: "View the DJ Soundpad here"
@@ -59,8 +61,8 @@ The lightbulb was constructed using layered HTML elements and CSS styling, witho
 
 This project strengthened my understanding of CSS positioning, shapes, shadows, layering, transitions, and HTML structure while giving me experience creating interactive visual elements from scratch.
 `,
-        image: "public/light-photo.png",
-        video: "public/light-video.webm",
+        image: `${BASE_URL}light-photo.png`,
+        video: `${BASE_URL}light-video.webm`,
         code_url: "https://noahpachec.github.io/lightbulb/",
         url_text: "View the project Here"
         
