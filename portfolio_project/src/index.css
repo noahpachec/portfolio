@@ -434,12 +434,22 @@ cursor: pointer;
   background-color: var(--6);
   display: flex;
   justify-content: left;
+  transition: 0.5s ease;
 }
 
 #footer .upper-text, .lower-text {
   margin-left: 2rem;
   color: var(--text-medium);
   text-decoration: none;
+}
+
+#footer a:hover {
+  color: var(--text-light);
+  opacity: 100%;
+  text-shadow: 
+  0 0 10px rgba(0, 200, 255, 0.7),
+  0 0 30px rgba(0, 200, 255, 0.4);
+
 }
 
 .lower-text {
@@ -637,8 +647,7 @@ cursor: pointer;
     height: 350px;
   }
 
-  #footer {
-    justify-content: left;
-
+  #footer div {
+    display: none;
   }
 }
