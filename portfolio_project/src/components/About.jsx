@@ -42,7 +42,7 @@ function About() {
                     
                     <FadeIn>
                         <div className="resume-callout">
-                            <a href="public/noah_resume.pdf" target="_blank" rel="noopener noreferrer">Please view my resume to see my previous experience.</a>
+                            <a href="public/noah_resume.pdf" target="_blank" rel="noopener noreferrer">My Resume</a>
                         </div>
                     </FadeIn>
                     
