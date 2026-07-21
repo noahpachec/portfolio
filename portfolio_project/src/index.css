@@ -650,4 +650,9 @@ cursor: pointer;
   #footer div {
     display: none;
   }
+
+  #footer {
+    align-items: center;
+    justify-content: center;
+  }
 }
