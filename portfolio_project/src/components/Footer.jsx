@@ -13,7 +13,7 @@ function Footer() {
 
             <a className="upper-text" href="public/noah_resume.pdf" target="_blank" rel="noopener noreferrer" >View my resume</a>
             <a className="upper-text" href="https://github.com/noahpachec" target="_blank" rel="noopener noreferrer">My GitHub</a>
-            <p className="upper-text">This website was made entirely by me with React</p>
+            <p className="upper-text">Created by me in React</p>
 
 
         </section>

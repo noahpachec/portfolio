@@ -512,17 +512,24 @@ cursor: pointer;
 }
 
 @media (max-width: 800px) {
+
+
   :root {
     font-size: 10px;
   }
-  
-  .grid {
-    grid-template-columns: 1fr;
+
+
+  section {
+    width: 100%;
   }
+  
 
   #navbar {
     height: 50px;
+    justify-content: center;
   }
+
+
 
   .about-container {
     align-items: center;
@@ -544,10 +551,11 @@ cursor: pointer;
   #about p {
     margin: 10px 0 5px 0;
     width: 300px;
-    border: solid white;
     
   }
-  
+  #about h1 {
+    text-align: center;
+  }
   
   #about img {
     margin: 30px 0 20px 0;
@@ -565,12 +573,10 @@ cursor: pointer;
   }
 
   .resume-callout {
-    width: 100%;
-    margin: 0;
-  }
+    margin: 20px;
 
-  #about {
-    border: white solid;
+    width: 100%;
+    margin: 20px 0 0 0;
   }
 
   .about-paragraphs {
@@ -581,10 +587,23 @@ cursor: pointer;
     
   }
 
+  #projects h1 {
+    text-align: center;
+  }
 
   .projects-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
+  }
+
+  .project-card {
+    width: 100%;
+    min-width: 0;
   }
 
   .about-images .fade-in {
@@ -616,5 +635,10 @@ cursor: pointer;
     margin-top: 100px;
     width: 300px;
     height: 350px;
+  }
+
+  #footer {
+    justify-content: left;
+
   }
 }
