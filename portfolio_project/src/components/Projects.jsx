@@ -46,7 +46,7 @@ Built using HTML, CSS, and JavaScript, the application allows users to trigger d
 
 The project has some limitations when multiple sounds are triggered rapidly due to the way the browser audio system is handled. However, it was one of my first projects to combine interactive JavaScript functionality with my frontend design skills, and it helped me better understand event handling, audio playback, and object-oriented programming in the browser.
 `,
-        image: `${BASE_URL}/dj-box-photo.png`,
+        image: `${BASE_URL}dj-box-photo.png`,
         video: "",
         code_url: "https://noahpachec.github.io/djbox/",
         url_text: "View the DJ Soundpad here"
